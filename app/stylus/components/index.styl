@@ -1,0 +1,296 @@
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  line-height 1.2
+  font-family 'Unbounded', sans-serif
+  font-weight 400
+  color #fff
+  &:before
+    box-sizing border-box
+h1, h2, h3, h4, h5, h6
+  margin 0
+ul
+  list-style none
+a
+  text-decoration none
+img
+  display block
+.wrapper
+  position relative
+  min-height 100vh
+  overflow hidden
+  background-image linear-gradient(72.44deg, #A87F76 0%, #CAA481 33.5%, #B9AB9E 72.28%, #F2E7D7 100%)
+.container
+  max-width 1207px
+  margin 0 auto
+  padding 0 15px
+  +mq(0, 1430px)
+    max-width none
+.main
+  padding-top 116px
+  +mq(0, 1320px)
+    padding-top 68px
+  +mq(0, 919px)
+    padding-top 0
+  +el(holder)
+    position relative
+  +el(aside)
+    position absolute
+    top 116px
+    left 0
+    min-width 606px
+    z-index 1
+    transition all .2s
+    +mq(0, 1320px)
+      top 68px
+      width 45%
+      min-width auto
+    +mq(0, 919px)
+      top 0
+      width 415px
+      max-width 100%
+      padding-top 34px
+      padding-right 18px
+      pointer-events none
+    +mq(0, 767px)
+      width 100%
+    &.active
+      background-color #292726
+      bottom 0
+      z-index 99
+      pointer-events auto
+      .menu
+        opacity 1
+        z-index 1
+  +el(p)
+    font-family 'Gilroy', sans-serif
+    font-weight 500
+    font-size 16px
+    line-height 19px
+    color #fff
+    margin-bottom 80px
+    +mq(0, 1320px)
+      margin-bottom 30px
+    +mq(0, 919px)
+      text-align right
+    +mq(0, 767px)
+      font-size 13px
+      text-align left
+      margin-bottom 0
+      margin-top 28px
+      max-width 50%
+      margin-left auto
+    +mq(0, 374px)
+      max-width 100%
+  +el(title-holder)
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 44px
+    +mq(0, 767px)
+      flex-direction row-reverse
+      margin-bottom 20px
+      img
+        max-width 60px
+  +el(title)
+    font-weight 500
+    font-size 64px
+    color #fff
+    +mq(0, 1320px)
+      font-size 36px
+  +el(content)
+    max-width 660px
+    margin-left auto
+    padding-top 8px
+    margin-bottom 72px
+    +mq(0, 1320px)
+      max-width 50%
+    +mq(0, 919px)
+      max-width 700px
+      margin 0 auto 72px
+      padding-top 113px
+    +mq(0, 767px)
+      display flex
+      flex-direction column-reverse
+      margin-bottom 28px
+.logo
+  font-weight 500
+  font-size 48px
+  color #fff
+  margin-left auto
+  +el(holder)
+    display flex
+    justify-content space-between
+    align-items center
+    padding-left 18px
+    margin-bottom 98px
+    +mq(0, 1320px)
+      margin-bottom 52px
+.burger
+  width 35px
+  display none
+  pointer-events auto
+  +mq(0, 919px)
+    display block
+  +el(item)
+    height 5px
+    border-radius 2.5px
+    background-color #fff
+    & + &
+      margin-top 8px
+.menu
+  +mq(0, 919px)
+    position relative
+    opacity 0
+    user-select none
+    z-index -1
+  +el(item)
+    display flex
+    justify-content flex-end
+    align-items center
+    & + &
+      margin-top 19px
+    &:nth-child(2)
+      .menu__sep
+        max-width calc(90% - 226px)
+        +mq(0, 919px)
+          max-width calc(89% - 240px)
+    &:nth-child(3)
+      .menu__sep
+        max-width calc(79% - 226px)
+        +mq(0, 919px)
+          max-width calc(84% - 240px)
+    &:nth-child(4)
+      .menu__sep
+        max-width calc(67% - 226px)
+        +mq(0, 919px)
+          max-width calc(80% - 240px)
+    &:nth-child(5)
+      .menu__sep
+        max-width calc(56% - 226px)
+        +mq(0, 919px)
+          max-width calc(76% - 240px)
+  +el(link)
+    height 40px
+    min-width 211px
+    font-weight 500
+    font-size 20px
+    line-height 25px
+    text-transform uppercase
+    color #fff
+    display flex
+    align-items center
+    padding-left 12px
+    +mq(0, 919px)
+      min-width 240px
+    &.active
+      background-color #272727
+      +mq(0, 919px)
+        background-color transparent
+  +el(sep)
+    height 1px
+    flex-grow 1
+    background-color #fff
+    margin-right 15px
+.juddy
+  +el(holder)
+    min-height 562px
+    background-image linear-gradient(255.1deg, rgba(255, 255, 255, 0.15) 64.32%, rgba(255, 219, 186, 0.15) 64.33%, rgba(255, 255, 255, 0.0495) 88.08%, rgba(198, 166, 137, 0.15) 125.56%)
+    border 1px solid rgba(255, 255, 255, 0.5)
+    backdrop-filter blur(11px)
+    border-radius 55px
+    padding  57px 100px
+    +mq(0, 1320px)
+      padding 45px
+      min-height auto
+    +mq(0, 767px)
+      padding 35px 35px 60px
+  +el(p)
+    font-family 'Gilroy', sans-serif
+    font-weight 400
+    font-size 24px
+    line-height 28px
+    color #fff
+    margin-bottom 86px
+    +mq(0, 1320px)
+      font-size 16px
+    +mq(0, 767px)
+      margin-bottom 70px
+  +el(arrow-holder)
+    display flex
+    align-items center
+    justify-content flex-end
+    position relative
+    z-index 1
+  +el(arrow-link)
+    display flex
+    justify-content center
+    align-items center
+    margin-right -38px
+    +mq(0, 1320px)
+      margin-right 0
+  +el(arrow-text)
+    font-family 'Unbounded', sans-serif
+    font-weight 400
+    font-size 14px
+    line-height 17px
+    text-decoration underline
+    text-transform uppercase
+    color #fff
+    margin-left 15px
+.copyright
+  position relative
+  font-family 'Gilroy', sans-serif
+  font-weight 500
+  font-size 16px
+  text-align right
+  color #fff
+  z-index 1
+  +mq(0, 767px)
+    font-size 11px
+    text-align center
+.el
+  position absolute
+  +mod(1)
+    top calc(50% + 24px)
+    left 84px
+    +mq(0, 1320px)
+      display none
+  +mod(2)
+    top -41px
+    right 193px
+    +mq(0, 1320px)
+      right -65px
+    +mq(0, 767px)
+      right -147px
+  +mod(3)
+    top 663px
+    left calc(50% - 291px)
+    z-index 1
+    +mq(0, 919px)
+      left calc(50% - 393px)
+    +mq(0, 1320px)
+      top 517px
+    +mq(0, 767px)
+      display none
+  +mod(4)
+    top calc(50% + 42px)
+    right 106px
+    +mq(0, 1320px)
+      display none
+  +mod(mob)
+    top calc(50% + 100px)
+    left calc(50% - 315px)
+    z-index 1
+    display none
+    +mq(0, 767px)
+      display block
+    +mq(0, 374px)
+      display none
+.footer
+  padding-bottom 185px
+  +mq(0, 7320px)
+    padding-bottom 68px
+  +mq(0, 767px)
+    padding-bottom 28px
