@@ -41,7 +41,7 @@ img
     left 0
     min-width 606px
     z-index 1
-    transition all .2s
+    transition all .2s ease
     +mq(0, 1320px)
       top 68px
       width 45%
@@ -88,15 +88,17 @@ img
     justify-content space-between
     align-items center
     margin-bottom 44px
+    +mq(0, 1320px)
+      img
+        max-width 60px
     +mq(0, 767px)
       flex-direction row-reverse
       margin-bottom 20px
-      img
-        max-width 60px
   +el(title)
     font-weight 500
     font-size 64px
     color #fff
+    text-transform uppercase
     +mq(0, 1320px)
       font-size 36px
   +el(content)
@@ -182,6 +184,7 @@ img
     display flex
     align-items center
     padding-left 12px
+    cursor pointer
     +mq(0, 919px)
       min-width 240px
     &.active
@@ -203,8 +206,9 @@ img
     padding  57px 100px
     +mq(0, 1320px)
       padding 45px
-      min-height auto
+      min-height 441px
     +mq(0, 767px)
+      min-height 354px
       padding 35px 35px 60px
   +el(p)
     font-family 'Gilroy', sans-serif
@@ -239,6 +243,12 @@ img
     text-transform uppercase
     color #fff
     margin-left 15px
+  +el(content-wrapper)
+    position relative
+  +el(inner)
+    display none
+    &.active
+      display block
 .copyright
   position relative
   font-family 'Gilroy', sans-serif
