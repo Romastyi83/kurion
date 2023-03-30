@@ -88,19 +88,18 @@ img
     justify-content space-between
     align-items center
     margin-bottom 44px
-    +mq(0, 1320px)
-      img
-        max-width 60px
     +mq(0, 767px)
       flex-direction row-reverse
       margin-bottom 20px
   +el(title)
     font-weight 500
-    font-size 64px
+    font-size 54px
     color #fff
     text-transform uppercase
     +mq(0, 1320px)
       font-size 36px
+    +mq(0, 420px)
+      font-size 24px
   +el(content)
     max-width 660px
     margin-left auto
@@ -203,7 +202,7 @@ img
     border 1px solid rgba(255, 255, 255, 0.5)
     backdrop-filter blur(11px)
     border-radius 55px
-    padding  57px 100px
+    padding  57px 60px 57px 100px 
     +mq(0, 1320px)
       padding 45px
       min-height 441px
@@ -231,9 +230,6 @@ img
     display flex
     justify-content center
     align-items center
-    margin-right -38px
-    +mq(0, 1320px)
-      margin-right 0
   +el(arrow-text)
     font-family 'Unbounded', sans-serif
     font-weight 400
@@ -300,7 +296,25 @@ img
       display none
 .footer
   padding-bottom 185px
-  +mq(0, 7320px)
+  +mq(0, 1320px)
     padding-bottom 68px
   +mq(0, 767px)
     padding-bottom 28px
+.push
+  +mq(0, 1320px)
+    max-width 47px
+.wm
+  +mq(0, 1320px)
+    max-width 45px
+.buy
+  +mq(0, 1320px)
+    max-width 62px
+.kurion
+  +mq(0, 1320px)
+    max-width 58px
+.juddy
+  +mq(0, 1320px)
+    max-width 60px
+.box-logo
+  +mq(0, 375px)
+    max-width 40px
