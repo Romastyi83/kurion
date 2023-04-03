@@ -89,7 +89,10 @@ img
     display flex
     justify-content space-between
     align-items center
+    min-height 114px
     margin-bottom 44px
+    +mq(0, 1320px)
+      min-height 73px
     +mq(0, 767px)
       flex-direction row-reverse
       gap 20px
@@ -201,17 +204,14 @@ img
     margin-right 15px
 .box
   +el(holder)
-    min-height 562px
     background-image linear-gradient(255.1deg, rgba(255, 255, 255, 0.15) 64.32%, rgba(255, 219, 186, 0.15) 64.33%, rgba(255, 255, 255, 0.0495) 88.08%, rgba(198, 166, 137, 0.15) 125.56%)
     border 1px solid rgba(255, 255, 255, 0.5)
     backdrop-filter blur(11px)
     border-radius 55px
-    padding  57px 60px 57px 100px 
+    padding  57px 60px 98px 100px 
     +mq(0, 1320px)
       padding 45px
-      min-height 441px
     +mq(0, 767px)
-      min-height 354px
       padding 35px 35px 60px
   +el(p)
     font-family 'Gilroy', sans-serif
@@ -219,18 +219,16 @@ img
     font-size 24px
     line-height 28px
     color #fff
-    margin-bottom 86px
     +mq(0, 1320px)
       font-size 16px
       line-height 19px
-    +mq(0, 767px)
-      margin-bottom 70px
   +el(arrow-holder)
     display flex
     align-items center
     justify-content flex-end
     position relative
     z-index 1
+    margin-top auto
   +el(arrow-link)
     display flex
     justify-content center
@@ -248,8 +246,14 @@ img
     position relative
   +el(inner)
     display none
+    min-height 405px
+    flex-direction column
     &.active
-      display block
+      display flex
+    +mq(0, 1320px)
+      min-height 334px
+    +mq(0, 767px)
+      min-height 316px
 .copyright
   position relative
   font-family 'Gilroy', sans-serif

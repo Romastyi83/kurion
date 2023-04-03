@@ -8,7 +8,7 @@ burger.addEventListener('click', () => {
   aside.classList.toggle('active');
 })
 
-if (document.documentElement.clientWidth > 1200) {
+if (document.documentElement.clientWidth > 1300) {
   window.addEventListener('mousemove', function (e) {
     let x = e.clientX / window.innerWidth;
     let y = e.clientY / window.innerHeight;
